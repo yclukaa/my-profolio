@@ -6,7 +6,7 @@ function Layout(props) {
   return (
     <div className={classes.page_container}>
       <MainNavigation />
-      <main className={classes.main}>
+      <main /* className={classes.main} */>
         {props.children}
       </main>
       <Footer />
