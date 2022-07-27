@@ -1,0 +1,35 @@
+.menu-enter {
+  right: -256px;
+}
+
+.menu-enter-active {
+  right: 0px;
+  transition: right 300ms;
+}
+
+.menu-exit {
+  right: 0px;
+}
+
+.menu-exit-active {
+  right: -256px;
+  transition: right 300ms;
+}
+
+.backdrop-enter {
+  opacity: 0;
+}
+
+.backdrop-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.backdrop-exit {
+  opacity: 1;
+}
+
+.backdrop-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
