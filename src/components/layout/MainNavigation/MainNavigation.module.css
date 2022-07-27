@@ -1,11 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@700&display=swap");
 
-svg {
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 64px 30px 64px;
+}
+
+.logo {
+  width: 27.91px;
+  height: 32px;
+  background-image: url(../../../logo.png);
+  background-size: 32px 32px;
+}
+
+.header svg {
   width: 32px;
   height: 32px;
 }
 
-p {
+.header p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -15,23 +30,8 @@ p {
   color: #262f36;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 32px 64px 30px 64px;
-}
-
-.email {
+.header p.email {
   color: #4d89c0;
-}
-
-.logo {
-  width: 27.91px;
-  height: 32px;
-  background-image: url(../../../logo.png);
-  background-size: 32px 32px;
 }
 
 .header_left,

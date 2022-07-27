@@ -1,20 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@700&display=swap");
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 32px;
-
-  color: #262f36;
-}
-
 .menu {
   background-color: #ffffff;
   width: 256px;
@@ -25,6 +10,17 @@ a {
   right: 0;
   text-align: right;
   gap: 16px;
+}
+
+.menu a {
+  text-decoration: none;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 32px;
+
+  color: #262f36;
 }
 
 .menu ul {
