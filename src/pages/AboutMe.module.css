@@ -1,0 +1,71 @@
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 256px 0px;
+  gap: 256px;
+
+  width: 100%;
+}
+
+.aboutMe .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 256px;
+  gap: 128px;
+}
+
+.aboutMe .hero .heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+
+  width: 45vw;
+}
+
+.aboutMe .hero .heroText .heroParagraph {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.aboutMe .hero .heroText .heroParagraph p {
+  color: rgba(38, 47, 54, 0.75);
+}
+
+.aboutMe .hero .imageGallery {
+  width: 100%;
+}
+
+.aboutMe .myTools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0px;
+  gap: 32px;
+
+  background-color: rgba(38, 47, 54, 0.1);
+
+  width: 100%;
+}
+
+.aboutMe .myTools .myToolsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 64px;
+
+  width: 100%;
+}
+
+.aboutMe .myTools .myToolsList svg {
+  /* setting height with width: auto keeps the aspect ratio */
+  height: 32px;
+  width: auto;
+}
