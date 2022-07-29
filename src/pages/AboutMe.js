@@ -46,6 +46,18 @@ function AboutMePage() {
     cursor: "pointer",
   };
 
+  const normalCardStyle = {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "32px",
+    gap: "16px",
+    backgroundColor: "rgba(38, 47, 54, 0.25)",
+
+    animation: "appear 0.6s ease-in"
+  };
+
   return (
     <div className={classes.aboutMe}>
       <div className={classes.hero}>
@@ -75,25 +87,27 @@ function AboutMePage() {
           tabActiveStyle={tabActiveStyle}
           tabInactiveStyle={tabInactiveStyle}
         />
-        <div className={classes.myToolsList}>
-          {tabs[activeTabID].toolsData.map((toolData) => (
-            <Card
-              key={toolData.name}
-              cardStyle={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-                padding: "32px",
-                gap: "16px",
-                backgroundColor: "rgba(38, 47, 54, 0.25)",
-              }}
-            >
-              {toolData.icon}
-              <p style={{fontSize: "18px", lineHeight: "21px"}}>{toolData.name}</p>
-            </Card>
-          ))}
-        </div>
+        {tabs.map((tab) => (
+          <div
+            key={tab.id}
+            className={classes.myToolsList}
+            style={
+              tab.id === activeTabID ? { display: "flex" } : { display: "none" }
+            }
+          >
+            {tab.toolsData.map((toolData) => (
+              <Card
+                key={toolData.name}
+                cardStyle={{...normalCardStyle}}
+              >
+                {toolData.icon}
+                <p style={{ fontSize: "18px", lineHeight: "21px" }}>
+                  {toolData.name}
+                </p>
+              </Card>
+            ))}
+          </div>
+        ))}
       </div>
       <CallToAction />
     </div>
