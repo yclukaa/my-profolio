@@ -44,12 +44,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px 0px;
+  /* padding-bottom =
+  .myTools gap(32 px) +
+  Card top-bottom padding(32+32 px) +
+  logo height(32 px)+
+  .myTools padding-top(32 px)*/
+  padding: 32px 0px 160px 0px;
   gap: 32px;
 
   background-color: rgba(38, 47, 54, 0.1);
 
   width: 100%;
+
+  position: relative;
 }
 
 .aboutMe .myTools .myToolsList {
@@ -62,6 +69,15 @@
   gap: 64px;
 
   width: 100%;
+
+  position: absolute;
+  /* top =
+  .myTools top padding(32 px) + 
+  Switch top-bottom padding(8+8 px) + 
+  Tab top-bottom padding(16+16 px) + 
+  Tab-H6 line height(30 px) + 
+  .myTools gap(32 px)*/
+  top: 142px;
 }
 
 .aboutMe .myTools .myToolsList svg {
