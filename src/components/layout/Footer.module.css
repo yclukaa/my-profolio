@@ -7,14 +7,34 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 64px 32px 64px;
+  /* padding: 30px 64px 32px 64px; */
+  padding: 0px 64px;
 }
 
-.logo {
+/* .logo {
   width: 27.91px;
   height: 32px;
   background-image: url(../../logo.png);
   background-size: 32px 32px;
+} */
+
+.footer > div,
+.footer > ul {
+  padding: 30px 0px 32px 0px;
+}
+
+.footer > div.logoContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  height: 64px;
+  padding: 14px 0px 16px 0px;
+}
+
+.footer .logoContainer svg {
+  height: 64px;
+  width : auto;
 }
 
 .copyright {

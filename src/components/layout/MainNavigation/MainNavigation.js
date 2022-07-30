@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import SocialMediaIconsList from "../../icons/SocialMediaIconsList";
+import Logo from "../../logo/Logo";
 import SideMenu from "./SideMenu/SideMenu";
 import classes from "./MainNavigation.module.css";
 
@@ -11,8 +12,9 @@ function MainNavigation() {
         <nav>
           <ul className={classes.header_left}>
             <li>
-              <Link to="/">
-                <div className={classes.logo}></div>
+              <Link to="/" className={classes.logo}>
+                {/* <div className={classes.logo}></div> */}
+                <Logo />
               </Link>
             </li>
             <li>
