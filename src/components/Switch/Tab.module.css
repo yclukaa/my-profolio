@@ -1,0 +1,7 @@
+.tab {
+    padding: 16px;
+    border-width: 1px;
+    border-radius: 50px;
+
+    transition: all 0.3s ease-in;
+}

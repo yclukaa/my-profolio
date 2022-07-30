@@ -1,0 +1,19 @@
+.cls1,
+.cls5 {
+  fill: none;
+}
+.cls2 {
+  clip-path: url(#clip-path);
+}
+.cls3 {
+  clip-path: url(#clip-path-2);
+}
+.cls4 {
+  fill: url(#未命名漸層_47);
+}
+.cls5 {
+  stroke: #231815;
+  stroke-miterlimit: 10;
+  /* stroke-width: 0.4px; */
+  stroke-width: 0.55px;
+}
