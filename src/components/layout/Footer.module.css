@@ -28,12 +28,13 @@ ul {
   flex-flow: row nowrap;
   align-items: center;
 
-  height: 64px;
-  padding: 14px 0px 16px 0px;
+  height: 48px;
+  /* padding + logo height = 94px*/
+  padding: 22px 0px 24px 0px;
 }
 
 .footer .logoContainer svg {
-  height: 64px;
+  height: 48px;
   width : auto;
 }
 

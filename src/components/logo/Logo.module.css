@@ -1,4 +1,4 @@
-.cls1,
+/* .cls1,
 .cls5 {
   fill: none;
 }
@@ -14,6 +14,18 @@
 .cls5 {
   stroke: #231815;
   stroke-miterlimit: 10;
-  /* stroke-width: 0.4px; */
+  /* stroke-width: 0.4px; 
   stroke-width: 0.55px;
+} */
+
+.cls1 {
+  fill: url(#未命名漸層_14);
+}
+.cls2 {
+  fill: url(#未命名漸層_47);
+}
+.cls3 {
+  fill: none;
+  stroke: #231815;
+  stroke-miterlimit: 10;
 }

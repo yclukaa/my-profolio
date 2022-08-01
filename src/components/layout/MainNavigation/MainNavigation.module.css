@@ -49,12 +49,13 @@
 }
 
 .header_left {
-  padding: 16px 0px 14px 0px;
+  /* padding + logo height = 94px */
+  padding: 24px 0px 22px 0px;
 }
 
 .header_left .logo,
 .header_left svg {
-  height: 64px;
+  height: 48px;
 }
 
 .header ul {
