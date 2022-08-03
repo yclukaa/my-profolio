@@ -91,7 +91,7 @@ function AboutMePage() {
               price and offering financial advice with my teammates in my final
               year project.
             </p>
-            <p>I am able to design and code responsive website.</p>
+            <p>I am able to design and code responsive website using React.</p>
             <p>
               I had the pleasure of working in the Hong Kong Jockey Club as an
               intern.
