@@ -3,7 +3,7 @@ import classes from "./Switch.module.css";
 
 function Switch(props) {
   return (
-    <div className={classes.switch}>
+    <div className={classes.switch} style={{background: props.backgroundColor}}>
       {props.tabs.map((tab) =>
         tab.id === props.activeTabID ? (
           <Tab

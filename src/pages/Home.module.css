@@ -52,11 +52,16 @@
   background: rgba(38, 47, 54, 0.1);
 }
 
-.home .workingExp .hkjcLogo {
+/* .home .workingExp .hkjcLogo {
   width: 53.33px;
   height: 64px;
   background-image: url(../hkjc.png);
   background-size: 53.33px 64px;
+} */
+
+.home .workingExp svg {
+  height: 64px;
+  width: auto;
 }
 
 .home .myWork {
@@ -65,6 +70,14 @@
   align-items: center;
   padding: 0px;
   gap: 32px;
+
+  position: relative;
+}
+
+.home .extraSpaceForOutOfFlowImageGallery {
+  /* Card top-bottom padding (32px) 
+  + imageHeight (165px) */
+  height: 197px;
 }
 
 /******                        Hero Button Style                                  ********/
@@ -74,11 +87,16 @@
   border-radius: 100px;
   border-width: 0;
 
-  cursor: pointer
+  cursor: pointer;
 }
 
 .home .hero button:hover {
-    background: linear-gradient(90deg, #4b6ed6f6 0%, #4b70d5f6 6.25%, #4d89c0f6 100%);
+  background: linear-gradient(
+    90deg,
+    #4b6ed6f6 0%,
+    #4b70d5f6 6.25%,
+    #4d89c0f6 100%
+  );
 }
 
 .home .hero button div {

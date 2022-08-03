@@ -1,0 +1,14 @@
+.leftarrow,
+.rightarrow,
+.leftarrow svg,
+.rightarrow svg {
+  height: 32px;
+  width: auto;
+}
+
+.imageGallery {
+    height: 165px;
+    width: 265px;
+}
+
+
