@@ -1,0 +1,128 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 256px 0px;
+  gap: 256px;
+}
+
+.home > div {
+  width: 100%;
+}
+
+.home .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 256px;
+  gap: 32px;
+}
+
+.home .hero > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 96px;
+}
+
+.home .hero button div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px 48px;
+  gap: 16px;
+}
+
+.home .hero h3,
+.home .hero h1,
+.home .hero p,
+.home .workingExp h5,
+.home .myWork p {
+  text-align: center;
+}
+
+.home .workingExp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 0px;
+  gap: 32px;
+
+  background: rgba(38, 47, 54, 0.1);
+}
+
+.home .workingExp .hkjcLogo {
+  width: 53.33px;
+  height: 64px;
+  background-image: url(../hkjc.png);
+  background-size: 53.33px 64px;
+}
+
+.home .myWork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+}
+
+/******                        Hero Button Style                                  ********/
+.home .hero button {
+  background: linear-gradient(90deg, #4b6ed6 0%, #4b70d5 6.25%, #4d89c0 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  border-width: 0;
+
+  cursor: pointer
+}
+
+.home .hero button:hover {
+    background: linear-gradient(90deg, #4b6ed6f6 0%, #4b70d5f6 6.25%, #4d89c0f6 100%);
+}
+
+.home .hero button div {
+  /* transition: padding 0.4s 0.2s, gap 0.2s; */
+  transition: padding 0.3s ease-out;
+}
+
+.home .hero button:hover div {
+  /* padding: 32px 48px 16px 48px; */
+  padding: 30px 48px 18px 48px;
+}
+
+/* .home .hero button:hover div {
+  gap: 56px;
+}  */
+
+/* .home .hero button svg path {
+  transition: all 0.35s;
+} */
+/* M32.4 54.7V9.25M50.41 37.47L32.25 54.7 15.71 37.47
+  M32.4 54.7V9.25: the vertical line from top to bottom, 32.4 x-axis position, 54.7V9.25 y-axis position from top to bottom
+  M50.41 37.47: x,y of rightside of the downward
+  L32.25 54.7: x,y of intersection of the downward
+  15.71 37.47: x,y of leftside of the downward */
+/* .home .hero button:hover svg path {
+  d: path("M32.4 62.7V17.25M50.41 45.47L32.25 62.7 15.71 45.47");
+} */
+
+/******                        Hero Button Style                                  ********/
+
+/******                        Typography & Text Color                            ********/
+.home .hero button h6 {
+  color: #ffffff;
+}
+
+.home .hero h3 {
+  background: linear-gradient(90deg, #4b6ed6 0%, #4b70d5 6.25%, #4d89c0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home .hero p,
+.home .myWork p {
+  color: rgba(38, 47, 54, 0.75);
+}
+/******                        Typography & Text Color                            ********/
