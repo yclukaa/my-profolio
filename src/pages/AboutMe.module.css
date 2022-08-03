@@ -1,0 +1,89 @@
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 256px 0px;
+  gap: 256px;
+
+  width: 100%;
+}
+
+.aboutMe .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 256px;
+  gap: 32px;
+
+  width: 100%;
+}
+
+.aboutMe .hero .heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+
+  width: 45vw;
+}
+
+.aboutMe .hero .heroText .heroParagraph {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.aboutMe .hero .heroText .heroParagraph p {
+  color: rgba(38, 47, 54, 0.75);
+}
+ 
+.aboutMe .hero .imageGallery {
+  width: 100%;
+} 
+
+.aboutMe .myTools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-bottom =
+  .myTools gap(32 px) +
+  Card top-bottom padding(32+32 px) +
+  logo height(32 px)+
+  .myTools padding-top(32 px)*/
+  padding: 32px 0px 160px 0px;
+  gap: 32px;
+
+  background-color: rgba(38, 47, 54, 0.1);
+
+  width: 100%;
+
+  position: relative;
+}
+
+.aboutMe .myTools .myToolsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 64px;
+
+  width: 100%;
+
+  position: absolute;
+  /* top =
+  .myTools top padding(32 px) + 
+  Switch top-bottom padding(8+8 px) + 
+  Tab top-bottom padding(16+16 px) + 
+  Tab-H6 line height(30 px) + 
+  .myTools gap(32 px)*/
+  top: 142px;
+}
+
+.aboutMe .myTools .myToolsList svg {
+  /* setting height with width: auto keeps the aspect ratio */
+  height: 32px;
+  width: auto;
+}

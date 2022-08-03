@@ -7,8 +7,5 @@
 }
 
 .imageGallery {
-    height: 165px;
-    width: 265px;
+  display: flex;
 }
-
-
