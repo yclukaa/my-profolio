@@ -1,0 +1,51 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 256px 256px;
+  gap: 64px;
+}
+
+.contact .contactMe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.contact .contactMe .contactInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.contact .contactMe .contactInfo h6 {
+  padding: 64px;
+  border-radius: 8px;
+}
+
+/************** Typography & Text Color **************/
+.contact > p {
+  font-size: 21px;
+  line-height: 30px;
+  color: rgba(38, 47, 54, 0.75);
+}
+
+.contact > h3 {
+  font-weight: bold;
+}
+
+.contact .contactMe h3 {
+  color: #4b6ed6;
+}
+
+.contact .contactMe .contactInfo h6 {
+  background: rgba(38, 47, 54, 0.25);
+}
+.contact .contactMe .contactInfo .email {
+  background: #4d89c0;
+  color: #ffffff;
+}
+/************** Typography & Text Color **************/
