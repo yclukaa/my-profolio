@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-// import "swiper/css/autoplay";
+import "swiper/css/autoplay";
 import "./ImageGallery-swiper.css";
 
 import LeftArrowIcon from "../icons/LeftArrowIcon";
@@ -18,8 +18,10 @@ function ImageGallery(props) {
     </SwiperSlide>
   ));
   return (
-    <div className={classes.imageGallery}>
+    <div className={classes.imageGallery} style={props.swiperContainerStyle}>
       <Swiper
+        centeredSlides={true}
+        autoHeight={true}
         loop={true}
         modules={[Autoplay, Pagination, Navigation]}
         autoplay={{

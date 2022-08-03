@@ -152,7 +152,7 @@ function HomePage() {
               }
             >
               {/* <p style={{ fontSize: "18px", lineHeight: "21px" }}>{tab.text}</p> */}
-              <ImageGallery imgs={tab.imgs} imageStyle={imageStyle} />
+              <ImageGallery imgs={tab.imgs} imageStyle={imageStyle} swiperContainerStyle={imageStyle} />
             </Card>
           ))}
           <div className={classes.extraSpaceForOutOfFlowImageGallery}></div>

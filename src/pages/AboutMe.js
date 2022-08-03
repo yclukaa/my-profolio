@@ -10,6 +10,12 @@ import GitIcon from "../components/icons/GitIcon";
 import Card from "../components/ui/Card";
 import classes from "./AboutMe.module.css";
 
+import medalImg from "../assets/images/aboutMe/imageGallery/medal.jpg";
+import logoExtractImg from "../assets/images/aboutMe/imageGallery/logoExtract.png";
+import figmaImg from "../assets/images/aboutMe/imageGallery/websiteDesignFigma.PNG";
+import figmaImg2 from "../assets/images/aboutMe/imageGallery/websiteDesignFigma2.PNG";
+import ImageGallery from "../components/ImageGallery/ImageGallery";
+
 function AboutMePage() {
   const [activeTabID, setActiveTabID] = useState(0);
   function tabOnClickHandler(id) {
@@ -58,6 +64,22 @@ function AboutMePage() {
     transition: "opacity 0.3s ease-in",
   };
 
+  const myImgs = [
+    { img: medalImg, altText: "medal" },
+    { img: logoExtractImg, altText: "logo extract" },
+    { img: figmaImg, altText: "website design" },
+    { img: figmaImg2, altText: "websiste design 2" },
+  ];
+
+  const imageStyle = {
+    width: "100%",
+    height: "100%",
+  };
+
+  const swiperContainerStyle = {
+    width: "98%",
+  };
+
   return (
     <div className={classes.aboutMe}>
       <div className={classes.hero}>
@@ -77,7 +99,7 @@ function AboutMePage() {
             <p>I’m always eager to learn and ready for challenges.</p>
           </div>
         </div>
-        <div className={classes.imageGallery}></div>
+        <ImageGallery imgs={myImgs} imageStyle={imageStyle} swiperContainerStyle={swiperContainerStyle} />
       </div>
       <div className={classes.myTools}>
         <Switch
@@ -86,6 +108,7 @@ function AboutMePage() {
           tabOnClick={tabOnClickHandler}
           tabActiveStyle={tabActiveStyle}
           tabInactiveStyle={tabInactiveStyle}
+          backgroundColor={"rgba(38, 47, 54, 0.25)"}
         />
         {tabs.map((tab) => (
           <div key={tab.id} className={classes.myToolsList}>
