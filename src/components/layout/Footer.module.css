@@ -4,11 +4,13 @@ ul {
 
 .footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   /* padding: 30px 64px 32px 64px; */
-  padding: 0px 64px;
+  padding: 32px 64px;
+  gap: 16px;
+
+  position: relative;
 }
 
 /* .logo {
@@ -18,9 +20,8 @@ ul {
   background-size: 32px 32px;
 } */
 
-.footer > div,
 .footer > ul {
-  padding: 30px 0px 32px 0px;
+  order: -1;
 }
 
 .footer > div.logoContainer {
@@ -30,7 +31,15 @@ ul {
 
   height: 48px;
   /* padding + logo height = 94px*/
-  padding: 22px 0px 24px 0px;
+
+  position: absolute;
+  /* top =
+  (.footer top-bottom padding (32+32 px)
+  + social media svg height (32 px)
+  + .footer gap (16 px) 
+  + p line height (24 px)) / 2 - logo svg height (48 px) / 2*/
+  top: 44px;
+  left: 16px;
 }
 
 .footer .logoContainer svg {
@@ -64,4 +73,43 @@ ul {
 .footer svg {
   width: 32px;
   height: 32px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 30px 64px 32px 64px; */
+    padding: 0px 64px;
+  }
+  
+  /* .logo {
+    width: 27.91px;
+    height: 32px;
+    background-image: url(../../logo.png);
+    background-size: 32px 32px;
+  } */
+  
+  .footer > ul {
+    order: 0;
+  }
+
+  .footer > div,
+  .footer > ul {
+    padding: 30px 0px 32px 0px;
+  }
+  
+  .footer > div.logoContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  
+    height: 48px;
+    /* padding + logo height = 94px*/
+    padding: 22px 0px 24px 0px;
+
+    position: static;
+  }
 }

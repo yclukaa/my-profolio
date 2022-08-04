@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 256px 256px;
-  gap: 64px;
+  padding: 64px 64px;
+  gap: 16px;
 }
 
 .contact .contactMe {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 8px;
 }
 
 .contact .contactMe .contactInfo {
@@ -18,18 +18,16 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 32px;
+  gap: 8px;
 }
 
 .contact .contactMe .contactInfo h6 {
-  padding: 64px;
+  padding: 32px;
   border-radius: 8px;
 }
 
 /************** Typography & Text Color **************/
 .contact > p {
-  font-size: 21px;
-  line-height: 30px;
   color: rgba(38, 47, 54, 0.75);
 }
 
@@ -49,3 +47,67 @@
   color: #ffffff;
 }
 /************** Typography & Text Color **************/
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 128px 128px;
+    gap: 32px;
+  }
+
+  .contact .contactMe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .contact .contactMe .contactInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .contact .contactMe .contactInfo h6 {
+    padding: 48px;
+    border-radius: 8px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 256px 256px;
+    gap: 64px;
+  }
+
+  .contact .contactMe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .contact .contactMe .contactInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .contact .contactMe .contactInfo h6 {
+    padding: 64px;
+    border-radius: 8px;
+  }
+}

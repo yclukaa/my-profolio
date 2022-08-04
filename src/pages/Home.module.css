@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 256px 0px;
-  gap: 256px;
+  padding: 64px 0px;
+  gap: 64px;
 }
 
 .home > div {
@@ -14,8 +14,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 256px;
-  gap: 32px;
+  padding: 0px 64px;
+  gap: 8px;
 }
 
 .home .hero > div {
@@ -23,15 +23,15 @@
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  gap: 96px;
+  gap: 24px;
 }
 
 .home .hero button div {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 24px 48px;
-  gap: 16px;
+  padding: 16px 24px;
+  gap: 8px;
 }
 
 .home .hero h3,
@@ -46,21 +46,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 96px 0px;
-  gap: 32px;
+  padding: 24px 0px;
+  gap: 8px;
 
   background: rgba(38, 47, 54, 0.1);
 }
 
-/* .home .workingExp .hkjcLogo {
-  width: 53.33px;
-  height: 64px;
-  background-image: url(../hkjc.png);
-  background-size: 53.33px 64px;
-} */
-
 .home .workingExp svg {
-  height: 64px;
+  height: 48px;
   width: auto;
 }
 
@@ -68,8 +61,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
-  gap: 32px;
+  padding: 0px 64px;
+  gap: 8px;
 
   position: relative;
 }
@@ -106,24 +99,8 @@
 
 .home .hero button:hover div {
   /* padding: 32px 48px 16px 48px; */
-  padding: 30px 48px 18px 48px;
+  padding: 22px 24px 10px 24px;
 }
-
-/* .home .hero button:hover div {
-  gap: 56px;
-}  */
-
-/* .home .hero button svg path {
-  transition: all 0.35s;
-} */
-/* M32.4 54.7V9.25M50.41 37.47L32.25 54.7 15.71 37.47
-  M32.4 54.7V9.25: the vertical line from top to bottom, 32.4 x-axis position, 54.7V9.25 y-axis position from top to bottom
-  M50.41 37.47: x,y of rightside of the downward
-  L32.25 54.7: x,y of intersection of the downward
-  15.71 37.47: x,y of leftside of the downward */
-/* .home .hero button:hover svg path {
-  d: path("M32.4 62.7V17.25M50.41 45.47L32.25 62.7 15.71 45.47");
-} */
 
 /******                        Hero Button Style                                  ********/
 
@@ -144,3 +121,177 @@
   color: rgba(38, 47, 54, 0.75);
 }
 /******                        Typography & Text Color                            ********/
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 128px 0px;
+    gap: 128px;
+  }
+
+  .home > div {
+    width: 100%;
+  }
+
+  .home .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 128px;
+    gap: 16px;
+  }
+
+  .home .hero > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 48px;
+  }
+
+  .home .hero button div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 16px;
+  }
+
+  .home .hero h3,
+  .home .hero h1,
+  .home .hero p,
+  .home .workingExp h5,
+  .home .myWork p {
+    text-align: center;
+  }
+
+  .home .workingExp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0px;
+    gap: 16px;
+
+    background: rgba(38, 47, 54, 0.1);
+  }
+
+  .home .workingExp svg {
+    height: 48px;
+    width: auto;
+  }
+
+  .home .myWork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 128px;
+    gap: 16px;
+
+    position: relative;
+  }
+
+  .home .extraSpaceForOutOfFlowImageGallery {
+    /* Card top-bottom padding (32px) 
+  + imageHeight (165px) */
+    height: 197px;
+  }
+
+  /******                        Hero Button Style                                  ********/
+  .home .hero button:hover div {
+    /* padding: 32px 48px 16px 48px; */
+    padding: 22px 32px 10px 32px;
+  }
+
+  /******                        Hero Button Style                                  ********/
+}
+
+@media only screen and (min-width: 1200px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 256px 0px;
+    gap: 256px;
+  }
+
+  .home > div {
+    width: 100%;
+  }
+
+  .home .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 256px;
+    gap: 32px;
+  }
+
+  .home .hero > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 96px;
+  }
+
+  .home .hero button div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 48px;
+    gap: 16px;
+  }
+
+  .home .hero h3,
+  .home .hero h1,
+  .home .hero p,
+  .home .workingExp h5,
+  .home .myWork p {
+    text-align: center;
+  }
+
+  .home .workingExp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0px;
+    gap: 32px;
+
+    background: rgba(38, 47, 54, 0.1);
+  }
+
+  .home .workingExp svg {
+    height: 64px;
+    width: auto;
+  }
+
+  .home .myWork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 256px;
+    gap: 32px;
+
+    position: relative;
+  }
+
+  .home .extraSpaceForOutOfFlowImageGallery {
+    /* Card top-bottom padding (32px) 
+  + imageHeight (165px) */
+    height: 197px;
+  }
+
+  /******                        Hero Button Style                                  ********/
+  .home .hero button:hover div {
+    /* padding: 32px 48px 16px 48px; */
+    padding: 30px 48px 18px 48px;
+  }
+
+  /******                        Hero Button Style                                  ********/
+}

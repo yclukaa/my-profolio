@@ -129,6 +129,7 @@ function AboutMePage() {
             ))}
           </div>
         ))}
+        <div className={classes.extraSpaceForOutOfFlowToolsList}></div>
       </div>
       <CallToAction />
     </div>

@@ -12,7 +12,7 @@ import "./SideMenu-transition.css";
 
 //http://reactcommunity.org/react-transition-group/css-transition
 
-function SideMenu() {
+function SideMenu(props) {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   function openMenuHandler() {
@@ -23,7 +23,7 @@ function SideMenu() {
     setMenuIsOpen(false);
   }
   return (
-    <div>
+    <div className={props.className}>
       <MenuIcon onClick={openMenuHandler} />
       <CSSTransition
         in={menuIsOpen}

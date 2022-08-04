@@ -97,7 +97,7 @@ function HomePage() {
     Tab top-bottom padding (32px)+
     Tab(h6) line height (30px)+
     gap (32px)*/
-    top: "260px",
+    bottom: "0px",
   };
   /******** Defining Switch ********/
   return (
@@ -130,7 +130,7 @@ function HomePage() {
         <div className={classes.myWork} ref={myWorkRef}>
           <h3 className="h3_bold">My Work</h3>
           <p>
-            I can design and code website using React, below are the highlights
+            I can code website using React, below are the highlights
             of several projects I did during my studies.
           </p>
           <Switch

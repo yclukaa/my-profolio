@@ -17,10 +17,10 @@ function MainNavigation() {
                 <Logo />
               </Link>
             </li>
-            <li>
+            <li className={classes.aboutMeLink}>
               <Link to="about-me">About Me</Link>
             </li>
-            <li>
+            <li className={classes.contactLink}>
               <Link to="contact">Contact</Link>
             </li>
           </ul>
@@ -32,7 +32,7 @@ function MainNavigation() {
           </div>
           <div className={classes.line}></div>
           <SocialMediaIconsList />
-          <SideMenu />
+          <SideMenu className={classes.sideMenu} />
         </div>
       </header>
       <div className={classes.underline}></div>

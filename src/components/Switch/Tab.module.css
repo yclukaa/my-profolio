@@ -1,7 +1,21 @@
 .tab {
-    padding: 16px;
-    border-width: 1px;
-    border-radius: 50px;
+  padding: 16px;
+  border-width: 1px;
+  border-radius: 50px;
 
-    transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+@media only screen and (max-width: 700px) {
+  h6 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  h6 {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
