@@ -18,5 +18,6 @@ You may also see any lint errors in the console.
 
 install all the dependencies listed in package.json
 
+# Project Description
 
-This project is only for fun purpose. The design of the website can be found in https://www.figma.com/file/yhuItJ6E3KATSnhKT5yphh/Web-Design?node-id=0%3A1
+This project is a my profolio website which is only for fun purpose. The design of the website can be found in https://www.figma.com/file/yhuItJ6E3KATSnhKT5yphh/Web-Design?node-id=0%3A1
