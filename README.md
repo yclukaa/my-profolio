@@ -13,7 +13,7 @@ This project is a my profolio website which is only for fun purpose. The design 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-<br/>
+
 First install [node.js](https://nodejs.org/en/)
 
 ## Available Scripts
