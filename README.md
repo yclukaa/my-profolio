@@ -7,9 +7,7 @@ This project is a my profolio website which is only for fun purpose. The design 
 # Cloning project from this repo
 
 ### `git clone https://github.com/yclukaa/my-profolio.git`
-<br/>
-<br/>
-<br/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
